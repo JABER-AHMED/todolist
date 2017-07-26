@@ -8,4 +8,5 @@
 	<p>{{$todo->body}}</p>
 	<br>
 	<a href="{{route('edit', $todo->id)}}" class="btn btn-default">Edit</a>
+	<a href="{{route('delete', $todo->id)}}" class="btn btn-danger">Delete</a>
 @endsection

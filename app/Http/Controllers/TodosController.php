@@ -60,4 +60,12 @@ class TodosController extends Controller
 
     	return redirect()->route('index', $todo->id)->with('success', 'Todo updated successfully');
     }
+
+    public function destroy($id)
+    {
+    	$todo = Todo::find($id);
+    	$todo->delete();
+
+    	return redirect()->route('index')->with('success', 'Todo deleted successfully');
+    }
 }

@@ -17,3 +17,4 @@ Route::get('todos/create', 'TodosController@create')->name('create');
 Route::post('todos/store', 'TodosController@store')->name('store');
 Route::get('edit/{id}', 'TodosController@edit')->name('edit');
 Route::post('update/{id}', 'TodosController@update')->name('update');
+Route::get('delete/{id}', 'TodosController@destroy')->name('delete');
